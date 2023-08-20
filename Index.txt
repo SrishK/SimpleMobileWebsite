@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Crash Course</title>
+    <link rel="stylesheet" href="CSS/Main.css">
+</head>
+<body>
+    <div class="navbar">
+        <div class="container">
+            <a class="logo" href="#"><span>Royal Flush</span></a>
+
+            <img id="Mobile-cta" class="Mobile-Menu-btn" src="Images/menu.svg" alt="Menu">
+            
+            <nav>
+                <img id="Mobile-Exit-cta" class="Mobile-Exit-button" src="Images/exit.svg" alt="Exit button">
+
+                <ul class="Primary-nav">
+                    <li class="Home"><a href="#">Home</a></li>
+                    <li><a href="#">Games and Services</a></li>
+                    <li><a href="#">Pricing</a></li>
+                </ul>
+
+                <ul class="Secondary-nav">
+                    <li class="Contact"><a href="#">Contact Us</a></li>
+                </ul>
+
+            </nav>
+        </div>
+    </div>
+
+    <section class="Hero">
+        <div class="container">
+            <div class="left-col">
+                <p class="Subhead">India's First Casino Night Organiser</p>
+                <h1>Bring Your </h1>
+                <h2>Poker Face!</h2>
+                <div class="hero-cta">
+                    <a href="#" class="Primary-cta">Explore</a>
+                    <a href="#" class="watch-video-cta"></a>
+                        <img src="Images/watch.svg" alt="Watch a video">Watch a video</img>
+                </div>
+            </div>
+
+            <img src="Images/illustration.svg" class="Hero-img" alt="Image"></img>
+        </div>
+    </section>
+    <section class="Features">
+        <div class="container">
+            <ul class="Features-list">
+                <li>Vegas Nights</li>
+                <li>Poker Tournaments</li>
+                <li>Custom Casino Chips</li>
+                <li>Professional Photography</li>
+                <li>Customisable Signage</li>
+                <li>Other Incerdible Features</li>
+            </ul>
+
+            <img src="Images/holding-phone.jpg" class="Features-img" alt="Phone holding">
+        </div>
+    </section>
+
+    <section class="Testimonial">
+        <div class="container">
+            <ul>
+                <li>
+                    <img src="Images/person.jpg" alt="Person1">
+                    <blockquote>"We give 12% of money received by us to a charity."</blockquote>
+                    <cite>-Jane Doe</cite>
+                    
+                </li>
+                <li>
+                    <img src="Images/person.jpg" alt="Person1">
+                    <blockquote>"We give 12% of money received by us to a charity."</blockquote>
+                    <cite>-Jane Doe</cite>
+                    
+                </li>
+                <li>
+                    <img src="Images/person.jpg" alt="Person1">
+                    <blockquote>"We give 12% of money received by us to a charity."</blockquote>
+                    <cite>-Jane Doe</cite>
+                    
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="Contact">
+        <div class="container">
+            <div class="Contact">
+                <h3>Contact Us</h3>
+
+                <form action="">
+                    <label for="Name">Name</label>
+                    <input type="text" name="Name" id="Name" >
+
+                </form>
+
+                <form action="">
+
+                    <label for="Message">Message</label>
+                    <textarea name="Message" id="Message" cols="30" rows="10" placeholder="Your Query"></textarea>
+                
+                </form>
+                    
+                <form action="">
+                    <input type="submit" name="send-message-cta" id="Send Message">
+                </form>
+
+                <p> Contact Number +91 839472712</p>
+                <p>Email id - info@royalflush.in</p>
+            </div>
+
+            <div>
+                <div class="Maps">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31103.858844971517!2d77.6176344543506!3d12.972980260544357!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae16a418770391%3A0xb50f46b826501036!2sIndiranagar%2C%20Bengaluru%2C%20Karnataka!5e0!3m2!1sen!2sin!4v1689176436150!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        
+        </div>
+    </section>
+
+    <script>
+    
+        const mobileBtn = document.getElementById('Mobile-cta')
+              nav = document.querySelector('nav')
+              mobileBtnExit = document.getElementById('Mobile-Exit-cta');
+
+        mobileBtn.addEventListener("click", () =>{
+            nav.classList.add('Mobile-Menu');
+        })
+
+        mobileBtnExit.addEventListener("click", () =>{
+            nav.classList.remove('Mobile-Menu');
+        })
+    
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,263 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital@1&display=swap');
+
+:root{
+     --primary-colour: gold;
+}
+
+body 
+{
+    background-color: rgb(248, 245, 245);
+    margin: 0;
+    font-family: 'Noto Sans';
+}
+
+.navbar 
+{
+    background-color: #720606;
+    padding: 1em;
+
+    .logo{
+        text-decoration: none;
+        font-weight: bold;
+        color: var(--primary-colour);
+        font-size: 3em;
+
+        span{
+            color: var(--primary-colour);
+        }
+    }
+
+    nav{
+        display: none;
+    }
+    
+    .container{
+        display: flex;
+        place-content: space-between;
+    }
+
+    .Mobile-Menu-btn{
+        cursor: pointer;
+    }
+}
+
+a{
+    color: var(--primary-colour);
+}
+
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+section{
+    padding: 5em 2em;
+}
+
+.Hero{
+    text-align: center;
+}
+
+.left-col{
+    .Subhead{
+        text-transform: uppercase ;
+        font-weight: bold;
+        letter-spacing: .1em;
+        color: var(--primary-colour);
+    }
+}
+
+h1{
+    font-size: 3em;
+    color: black;
+    line-height: 1em;
+    margin-top: 0;
+    margin-bottom: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+h2{
+    font-size: 3em;
+    color: black;
+    line-height: 1em;
+    margin-top: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+
+.Primary-cta{
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 8em;
+    background: var(--primary-colour);
+    padding: .6em 1.3em;
+    display: inline-block;
+    color: white;
+    font-size: 1.5em;
+}
+
+.watch-video-cta{
+    display: block;
+    margin-top: 1.5em;
+    img{
+        margin-left: 2em;
+    }
+
+}
+
+.Hero-img{
+    margin-top: 5em;
+    width: 60%;
+}
+
+.Features{
+    background-color: black;
+    color: whitesmoke;
+}
+
+.Features-list{
+    margin: 0;       
+    padding-left: .5em;
+
+    li{
+        font-size: 2em;
+        font-weight: bold;
+        margin-bottom: .5em;
+        position: relative;
+
+        &:before{
+            content: '';
+            left: -1.2em;
+            position: absolute;
+            height: 35px;
+            width: 35px;
+            background-image: url("../Images/bullet.svg");
+            background-size: contain;
+            margin-right: .5em;
+        }
+    }
+}
+
+.Features-img{
+    display: none;
+}
+
+.Testimonial{
+    background: var(--primary-colour);
+     li{
+        background: #720606;
+        text-align: centre;
+        padding: 2em 1em;
+        width: 80%;
+        margin: 0 auto 5em auto;
+        border-radius: 1em;
+        color: white;
+
+        img{
+                width: 5em;
+                height: 5em;
+                border: 5px dashed;
+                border-radius: 50%;
+                margin-top: -4.5em;
+        }
+    }
+    
+}
+
+h3{
+    font-size: 2em;
+}
+
+label{
+    display: block;
+    font-size: 1.2em;
+    margin-bottom: .5em;
+
+}
+
+input, textarea{
+    width: 100%;
+    padding: .8em;
+    margin-bottom: 1em;
+    border-radius: .3em;
+    border: 1px solid darkred;
+    box-sizing: border-box;
+}
+
+input[type="submit"]{
+    background-color: #720606;
+    color: white;
+    font-weight: bold;
+    font-size: 1.3em;
+    border: none;
+    margin-bottom: 5em;
+    border-radius: 5em;
+    padding: .8em 2em;
+    display: inline-block;
+    width: unset;
+    cursor: pointer;
+}
+
+iframe{
+    width: 100%;
+    height: 300ox;
+}
+
+nav.Mobile-Menu{
+    display: block;
+}
+
+nav{
+    position: fixed;
+    z-index: 999;
+    width: 66%;
+    right: 0;
+    top: 0;
+    background: darkred;
+    height: 100vh;
+    padding: 1em;
+
+    ul.Primary-nav{
+        margin-top: 3em;
+    }
+
+    li{
+        a{
+            color: white;
+            text-decoration: none;
+            display: block;
+            padding: .5em;
+            font-size: 1.3em;
+            text-align: right;
+
+            &:hover{
+                font-weight: bold;
+            }
+
+        }
+    }
+}
+
+.Mobile-Exit-button{
+    float: right;
+    margin: .5em;
+    cursor: pointer;
+}
+
+.Contact{
+    p{
+        font-weight: bold;
+        font-size: 1.3em;
+        margin: .5em;
+        padding: .5em;
+    }
+}
+
+@media screen and (min-width: 600px) {
+    .Mobile-Exit-button ,.Mobile-Menu-btn {
+        display: none !important;
+    }
+}
