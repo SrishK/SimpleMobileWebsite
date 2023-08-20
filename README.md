@@ -1,2 +1,2 @@
 # SimpleMobileWebsite
-The HTML and CSS code for a beginner mbile website.
+The HTML and CSS code for a beginner mobile website.
